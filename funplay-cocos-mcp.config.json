@@ -1,0 +1,27 @@
+{
+  "host": "127.0.0.1",
+  "port": 29117,
+  "portMode": "project",
+  "clientConfigEntries": {
+    "trae": {
+      "serverName": "cocos-3d-a4d037",
+      "url": "http://127.0.0.1:29117/",
+      "configPath": "C:\\Users\\qxj\\.trae\\mcp.json",
+      "projectIdentity": "a4d0377dab05f6b2e0ef97c3"
+    }
+  },
+  "toolProfile": "core",
+  "enabledTools": [],
+  "disabledTools": [],
+  "enabledToolCategories": [],
+  "disabledToolCategories": [],
+  "enableSessions": true,
+  "enableConsoleLogging": true,
+  "executeJavascriptSafetyChecks": true,
+  "autostart": true,
+  "maxInteractionLogEntries": 50,
+  "lastClientTargetId": "trae",
+  "activeToolProfileName": "",
+  "savedToolProfiles": [],
+  "language": "auto"
+}
