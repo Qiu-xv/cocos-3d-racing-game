@@ -1,5 +1,5 @@
-import { _decorator, Component, Input, input, Node, EventTouch } from 'cc';
-// import { EventKeyboard, KeyCode } from 'cc';  //键盘输入（适配微信小游戏触摸控制后停用，保留备查）
+import { _decorator, Component, Input, input, Node, EventTouch, AudioSource } from 'cc';
+// import { EventKeyboard, KeyCode } from 'cc';  //键盘输入（当前使用触摸控制，保留备查）
 import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
@@ -25,7 +25,7 @@ export class Player extends Component {
     normalSpeed: number = 0  //普通速度：start 时记录 moveSpeed 的场景配置值，抬起手指后恢复到它
 
     protected onLoad(): void {
-        //键盘监听（适配微信小游戏，已注释停用）
+        //键盘监听（当前使用触摸控制，已注释停用）
         //input.on(Input.EventType.KEY_DOWN,this.Key_Down,this)
         //input.on(Input.EventType.KEY_UP,this.Key_Up,this)
 
@@ -67,7 +67,7 @@ export class Player extends Component {
     }
 
 
-  //键盘按下方法（适配微信小游戏，已注释停用）
+  //键盘按下方法（当前使用触摸控制，已注释停用）
     /*Key_Down(event: EventKeyboard){ //默认参数 是键盘按下相关信息
       if(event.keyCode == KeyCode.KEY_A){
         this.moveInput.a = true
@@ -79,7 +79,7 @@ export class Player extends Component {
     }
 
 
-    //键盘抬起方法（适配微信小游戏，已注释停用）
+    //键盘抬起方法（当前使用触摸控制，已注释停用）
     Key_Up(event: EventKeyboard){
         if(event.keyCode == KeyCode.KEY_A){
         this.moveInput.a = false
@@ -93,14 +93,19 @@ export class Player extends Component {
 
 
     start(){
-        this.normalSpeed = this.moveSpeed  //记录普通速度（即编辑器里配置的 moveSpeed，当前场景为 20），抬起手指后恢复
+      //记录普通速度（即编辑器里配置的 moveSpeed，当前场景为 20），抬起手指后恢复
+        this.normalSpeed = this.moveSpeed
     }
 
     //this.node代表节点自身
     //.getPosition()获取节点位置
     //.setPosition(x,y,z)修改节点位置
     update(deltaTime: number){     //20
-        if(GameManager.instance && GameManager.instance.isGameOver){return}  //游戏结束后赛车和相机停止移动（结束状态由 GameManager 管理）
+       //游戏结束后赛车和相机停止移动（结束状态由 GameManager 管理）
+        if(GameManager.instance && GameManager.instance.isGameOver){
+           const audio = this.node.getComponent(AudioSource)
+           if (audio) { audio.stop() }
+          return} 
         const P_Pos= this.node.getPosition()  //获取赛车节点位置
         const C_Pos = this.cameraNode.getPosition()  //获取相机节点位置
         const s=deltaTime * this.moveSpeed //帧时间补偿（纵向前进速度）

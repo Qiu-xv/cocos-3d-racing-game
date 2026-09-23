@@ -1,0 +1,203 @@
+{
+  "ver": "2.3.14",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96",
+  "files": [],
+  "subMetas": {
+    "73aee": {
+      "importer": "gltf-mesh",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@73aee",
+      "displayName": "",
+      "id": "73aee",
+      "name": "Cylinder.015_Gold_0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 156
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3effa": {
+      "importer": "texture",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@3effa",
+      "displayName": "",
+      "id": "3effa",
+      "name": "UnnamedTexture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/UI/coin1/textures/Gold_baseColor.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "221a5": {
+      "importer": "texture",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@221a5",
+      "displayName": "",
+      "id": "221a5",
+      "name": "UnnamedTexture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/UI/coin1/textures/Gold_metallicRoughness.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0089c": {
+      "importer": "texture",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@0089c",
+      "displayName": "",
+      "id": "0089c",
+      "name": "UnnamedTexture-2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/UI/coin1/textures/Gold_emissive.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b633": {
+      "importer": "texture",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@9b633",
+      "displayName": "",
+      "id": "9b633",
+      "name": "UnnamedTexture-3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/UI/coin1/textures/Gold_normal.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0be58": {
+      "importer": "gltf-material",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@0be58",
+      "displayName": "",
+      "id": "0be58",
+      "name": "Gold.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1932": {
+      "importer": "gltf-scene",
+      "uuid": "2e7d3b88-3020-4496-a24b-a55444675a96@d1932",
+      "displayName": "",
+      "id": "d1932",
+      "name": "scene.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "uri": "db://assets/UI/coin1/textures/Gold_baseColor.png"
+      },
+      {
+        "uri": "db://assets/UI/coin1/textures/Gold_metallicRoughness.png"
+      },
+      {
+        "uri": "db://assets/UI/coin1/textures/Gold_emissive.png"
+      },
+      {
+        "uri": "db://assets/UI/coin1/textures/Gold_normal.png"
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "2e7d3b88-3020-4496-a24b-a55444675a96@73aee"
+      ],
+      "skeletons": [],
+      "textures": [
+        "2e7d3b88-3020-4496-a24b-a55444675a96@3effa",
+        "2e7d3b88-3020-4496-a24b-a55444675a96@221a5",
+        "2e7d3b88-3020-4496-a24b-a55444675a96@0089c",
+        "2e7d3b88-3020-4496-a24b-a55444675a96@9b633"
+      ],
+      "materials": [
+        "2e7d3b88-3020-4496-a24b-a55444675a96@0be58"
+      ],
+      "scenes": [
+        "2e7d3b88-3020-4496-a24b-a55444675a96@d1932"
+      ]
+    }
+  }
+}
